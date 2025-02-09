@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Especial para Shirley</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9e7f7; /* Fondo rosa claro */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .card h1 {
+            color: #ff6f61; /* Rosa pastel */
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .card p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333333;
+        }
+        .signature {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #4caf50;
+            font-size: 1.3rem;
+        }
+        .heart {
+            color: #ff4757; /* Rojo corazón */
+            font-size: 2rem;
+            animation: heartbeat 1.5s infinite;
+        }
+        .panda {
+            font-size: 3rem;
+            color: #000000;
+            margin-top: 20px;
+        }
+        .background-hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .background-hearts span {
+            position: absolute;
+            font-size: 2rem;
+            color: #ff6f61;
+            opacity: 0.5;
+            animation: float 10s infinite ease-in-out;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Corazones flotantes en el fondo -->
+    <div class="background-hearts">
+        <span style="top: 10%; left: 20%;">❤️</span>
+        <span style="top: 30%; left: 50%;">❤️</span>
+        <span style="top: 60%; left: 70%;">❤️</span>
+        <span style="top: 80%; left: 30%;">❤️</span>
+        <span style="top: 40%; left: 10%;">❤️</span>
+    </div>
+
+    <!-- Contenido principal de la carta -->
+    <div class="card">
+        <h1>Querida Shirley 🐼💖</h1>
+        <p>Eres como un panda: dulce, adorable y única. Cada vez que pienso en ti, mi corazón se llena de alegría y amor. ❤️</p>
+        <p>Gracias por ser esa persona especial que ilumina mis días y hace que todo sea más bonito. 🌸 Eres increíble, y quiero que siempre recuerdes lo valiosa que eres. 💕</p>
+        <p>Con mucho cariño y abrazos panda-dulces, 🐾</p>
+        <div class="signature">Henry Tanguila 🐼❤️</div>
+        <div class="panda">🐼</div>
+    </div>
+</body>
+</html>
